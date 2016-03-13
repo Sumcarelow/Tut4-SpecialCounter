@@ -3,24 +3,42 @@
 using namespace std;
 
 SpecialCounter::SpecialCounter(){
-	int i;
-	for (i = 0; i <= 255; i++) {
-		cout << "the list of the numbers:" << i << endl;
-	}
-		for (i = 255; i <= 0; i--) {
-			cout << "the list of the numbers in reverse:" << i << endl;
-
-		}
+	newDecreament = 0;
+	newIncreament = 0;
 	}
 
-	SpecialCounter::SpecialCounter(int increaments, int deceaments){
+	void SpecialCounter::Counter(int increaments, int deceaments){
 		int i;
-		for (i = newStart; i <= NewStop; i += increaments)
+		for (i = newStart; i <= newStop; i += increaments)
 			cout << "The list of numbers:" << i << endl;
 
-		for (i = NewStop; i >= newStart; i -= deceaments)
+		for (i = newStop; i >= newStart; i -= deceaments)
 			cout << "The reverse list is" << i << endl;
 
 
 
+	}
+
+	int SpecialCounter::getStartValue() const{
+		return newStart;
+	}
+
+	int SpecialCounter :: getStopValue() const {
+		return newStop;
+	}
+
+	void SpecialCounter::setStartValue(int start) {
+		newStart = start;
+	}
+
+	void SpecialCounter::setStopValue(int stop) {
+		newStop = stop;
+	}
+
+	void SpecialCounter::setDecreament(int decreament) {
+		newDecreament = decreament;
+	}
+
+	void SpecialCounter::setIncreament(int increament) {
+		newIncreament = increament;
 	}

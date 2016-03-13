@@ -1,5 +1,5 @@
 #include<iostream>
-#include "SpecialCounter.h"
+#include "Counter.h"
 
 using namespace std;
 
@@ -27,4 +27,8 @@ int main() {
 	};
 
 	SpecialCounter SpecialCounter1;
+	SpecialCounter1.setStartValue(Start);
+	SpecialCounter1.setStopValue(Stop);
+	
+	cout <<"Start value is:"<< SpecialCounter1.getStartValue() << endl;
 }

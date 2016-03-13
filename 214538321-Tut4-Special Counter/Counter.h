@@ -7,14 +7,24 @@
 class SpecialCounter{
 
 private:int newStart;   //Member variables  
-		int NewStop;
+		int newStop;
+		int newIncreament;
+		int newDecreament;
 
 
 public: SpecialCounter();   //Default Constructer and destructor
 		~SpecialCounter();
 
-		SpecialCounter(int, int);  //Overload Constructor
+		void Counter(int, int);  //Overload Constructor
 
+		//accesor functions
+		int getStartValue() const;
+		int getStopValue() const;
 
+		//mutator functions
+		void setStartValue(int);
+		void setStopValue(int);
+		void setDecreament(int);
+		void setIncreament(int);
 };
 #endif
