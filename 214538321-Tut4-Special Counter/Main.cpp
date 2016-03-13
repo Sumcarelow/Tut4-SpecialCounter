@@ -29,6 +29,10 @@ int main() {
 	SpecialCounter SpecialCounter1;
 	SpecialCounter1.setStartValue(Start);
 	SpecialCounter1.setStopValue(Stop);
+	SpecialCounter1.setDecreament(decreament);
+	SpecialCounter1.setIncreament(increament);
+	SpecialCounter1.Counter();
+
 	
-	cout <<"Start value is:"<< SpecialCounter1.getStartValue() << endl;
+	
 }

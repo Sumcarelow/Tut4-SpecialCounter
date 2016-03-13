@@ -15,7 +15,7 @@ private:int newStart;   //Member variables
 public: SpecialCounter();   //Default Constructer and destructor
 		~SpecialCounter();
 
-		void Counter(int, int);  //Overload Constructor
+		void Counter();  //Overload Constructor
 
 		//accesor functions
 		int getStartValue() const;

@@ -7,12 +7,12 @@ SpecialCounter::SpecialCounter(){
 	newIncreament = 0;
 	}
 
-	void SpecialCounter::Counter(int increaments, int deceaments){
+	void SpecialCounter::Counter(){
 		int i;
-		for (i = newStart; i <= newStop; i += increaments)
+		for (i = newStart; i <= newStop; i += newIncreament)
 			cout << "The list of numbers:" << i << endl;
 
-		for (i = newStop; i >= newStart; i -= deceaments)
+		for (i = newStop; i >= newStart; i -= newDecreament)
 			cout << "The reverse list is" << i << endl;
 
 
