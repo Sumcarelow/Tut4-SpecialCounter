@@ -7,6 +7,10 @@ SpecialCounter::SpecialCounter(){
 	newIncreament = 0;
 	}
 
+SpecialCounter::~SpecialCounter(){
+
+
+}
 	void SpecialCounter::Counter(){
 		int i;
 		for (i = newStart; i <= newStop; i += newIncreament)
