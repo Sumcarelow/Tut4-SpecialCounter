@@ -80,7 +80,7 @@
     <ClCompile Include="SpecialCounter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SpecialCounter.h" />
+    <ClInclude Include="Counter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
